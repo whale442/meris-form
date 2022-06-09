@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+
+  
+  <title>Registraion Form</title>
+</head>
+
+<body>
+   <!-- Header -->
+ 
+   <div class="header">
+    <a href="/"><img src="image/Trustees 1.png" class="logo"></a>
+    <h5 class="text-center">LAST WILL AND TESTAMENT</h5>
+  </div>
+  <form action="#" class="form" name="theform">
+
+    <!-- Progress bar -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+
+      <div class="progress-step progress-step-active"data-title="Getting Started"></div>
+      <div class="progress-step" data-title="Personal Information"></div>
+      <div class="progress-step" data-title="Spouse & Beneficiaries"></div>
+      <div class="progress-step" data-title="Asset Details"></div>
+      <div class="progress-step" data-title="Confirmation & Checkout"></div>
+     
+      
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- Steps -->
+
+      <!-- FIRST STEP END   / -->
+    <div class="form-step form-step-active">
+      <div class="input-group ">
+        <p>
+          <!-- Create a simple will <br>in minutes<br>
+          <br> -->
+          <span style="color: #043c6d">Create a simple will</span>
+          <span style="color:#067ed3;"><br>in minutes</span><br>
+            <br>
+        </p> 
+        
+
+
+      </div>
+      <div class="">
+        <a href="#" class="get-started btn-next width-50 ml-auto get-started">Get started</a>
+      </div>
+    </div>
+
+    <!-- FIRST STEP END   / -->
+
+
+    <div class="form-step">
+
+      <div class="name">
+       <!-- SECOND STEP   -->
+     
+        <div class="input-group">
+          <label for="">Title</label>
+          <select type="text" name="person_title"   class="person_title" placeholder="Select" >
+            <option value="">--Select--</option>
+            <option value="Prof">Prof</option>
+            <option value="Dr">Dr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+          </select>
+        </div>
+        <div class="input-group">
+            <label for="">surname *</label>
+             <input type="text" autocomplete="off"  class="person_surname" name="person_surname"  id="person_surname" placeholder="Surname" >
+        </div> 
+
+        <div class="input-group">
+          <label for="" id="for_firstname">First Name *</label>
+          <input type="text" name="person_firstname"  class="person_firstname" placeholder="Firstname" >
+        </div>
+
+        <div class="input-group">
+          <label class="other" for="">Other Name</label>
+          <input type="text" name="person_othername" class="person_othername" placeholder="Othername" >
+        </div>
+       
+      </div>
+
+      <div class="input-group phonenumber">
+        <label for="">Phone Number *</label>
+        <input type="tel" name="person_phonenumber" class="person_phonenumber"  placeholder="Phone number">
+      </div>
+
+      <div class="input-group address">
+        <label for="">Address *</label>
+        <input type="text" name="person_address" id="id_address" class="person_address"  placeholder="address">
+      </div>
+
+      <div class="input-group companyname">
+        <label for="">Company Name *</label>
+        <input type="text" name="person_companyname" id="id_companyname" class="person_companyname"  placeholder="Company Name">
+      </div>
+
+      <div class="input-group companyaddress">
+        <label for="">Company Address *</label>
+        <input type="text" name="companyaddress" id="id_companyaddress" class="person_companyaddress"  placeholder="Company Address">
+      </div>
+
+
+      <div class="input-group martialstatus">
+        <label for="">Marital Status *</label>
+        <select type="text" name="martialstatus" id="id_martialstatus" class="person_martialstatus"  placeholder="Martial Status">
+          <option value="">--Select--</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Divorce">Divorce</option>
+        </select>
+      </div>
+
+      <div class="input-group typeofmarriage">
+        <label for="">Type of Marriage <span class="">*</span></label>
+        <select type="text" name="typeofmarriage" id="id_typeofmarriage" class="person_typeofmarriage"  placeholder="Type of Marriage">
+          <option value="">--Select--</option>
+          <option value="Tradition">Traditional</option>
+          <option value="Court">Court</option>
+        </select>
+      </div>
+
+      <div class="input-group meansofidenification">
+        <label for="">Means of Identification*</label>
+        <select type="text" name="meansofidentification"  class="person_meansofidentification" id="id_meansofidentification"   placeholder="Means Of Identification">
+          <option value=""> --Select-- </option>
+          <option value="drivers_licence">Driver's Licence</option>
+          <option value="International_passport">International Passport</option>
+          <option value="voters_card">Voter's card</option>         
+</select>
+      </div>
+
+
+      <div class="input-group identificationnumber">
+        <label for="">Identification Number</label>
+        <input type="text" name="identificationnumber" class="person_identificationnumber"  id="id_identificationnumber" placeholder="Identification Number">
+      </div>
+
+      <div class="btns-group">
+        <button  type="button" class="btn btn-prev">Back</button>
+        <button  id="nextbutton" type="button" class="navigator btn-next btn-display">Next</button>
+      </div>
+    </div>
+
+  </div>  
+
+     <!-- SECOND STEP END   -->  
+
+     <!-- THIRD STEP / -->
+     <div class="container">
+    <div class="form-step">
+      <div class="input-group nameofspouse">
+        <label for="nameofspouse">Name of Spouse</label>
+        <input type="text" name="person_nameofspouse" class="person_nameofspouse" id="nameofspouse" />
+      </div>
+      <div class="input-group nameofaddress">
+        <label for="address">Address *</label>
+        <input type="text" name="person_address" class="person_address" address="address" />
+      </div>
+      <div class="input-group noofdependents">
+        <label for="noofdependents">No of Dependents *</label>
+        <input type="number" name="person_noofdependents" class="person_noofdependents" id="noofdependents" />
+      </div>
+      <div class="input-group namesofdependents">
+        <label for="namesofdependents">Name of Dependents *</label>
+        <input type="text" name="person_namesofdependents" class="person_namesofdependents" id="namesofdependents" />
+      </div>
+
+      <h4>
+        BENEFICIARY DETAILS
+      </h4>
+  
+   <div class="field">
+   <div id="beneficiaryTable">
+    <div class="form-row id=row">
+      <div class="input-group beneficiary_fullname">
+        <label for="beneficiary_fullname">Full Name<span> *</span></label>
+        <input type="text" name="person_beneficiary_fullname[]" class="person_beneficiary_fullname" id="beneficiary_fullname" style="padding-left:5px;" >
+      </div>
+  
+    
+      <div class="input-group beneficiary_address">
+        <label for="beneficiary_address">Address *</label>
+        <input type="text" name="person_beneficiary_address[]" class="person_beneficiary_address" id="beneficiary_address"  >
+      </div>
+        
+      <div class="input-group beneficiary_phone">
+        <label for="beneficiary_phone">Phone *</label>
+        <input type="number" name="person_beneficiary_phone[]" class="person_beneficiary_phone"  id="beneficiary_phone"  >
+      </div>
+      
+      <div class="input-group beneficiary_email">
+        <label for="beneficiary_email">Email *</label>
+        <input type="email" name="person_beneficiary_email[]" class="person_beneficiary_email" id="beneficiary_email" >
+      </div>
+   
+      <div class="input-group beneficiary_shareValues">
+        <label for=beneficiary_shareValues>values or (%)</label>
+        <input type="number" name="person_beneficiary_shareValues[]" class="person_beneficiary_shareValues" >
+      </div>
+    </div>
+  </div>
+    
+      <br /><button type="button" class="button_ button_5 " id="addBeneficiarybtn"><i class="fa fa-plus-circle"></i> Add more beneficiaries </button><br /> </tr>
+      <!-- <br /><button type="button" class="button_ button_5 " id="removeBeneficiarybtn"><i class="fa fa-minus-circle" hidden></i> Remove beneficiaries </button><br /> </tr> -->
+ </br> 
+     
+ </div>
+      
+      <div class="btns-group">
+        <button type="button" class="btn btn-prev">Back</button>
+        <button type="button"  class="btn btn-next btn-display2">Next</button>
+      </div>
+    </div>
+<br>
+    <!-- THIRD STEP END / -->
+
+    <!-- FOURTH STEP / -->
+    <div class="container">
+    <div class="form-step">
+      <div class="input-group psa">
+        <label for="psa">PSA *</label>
+        <input type="text" name="person_psa" id="psa" class="person_psa" placeholder='PSA' />
+      </div>
+      <div class="input-group rsa">
+        <label for="">RSA number *</label>
+        <input type="text" name="person_rsanumber" id="person_rsanumber" class="person_rsanumber" placeholder="RSA number" />
+      </div>
+     
+
+      <h4>
+        BANK DETAILS
+      </h4>
+  
+    <div class="field2">
+    <div id="bankDetails">
+      <div class="form-row id=row2">
+      <div class="input-group bankName">
+        <label for="">Bank Name *</label>
+        <select type="text" name="person_bankName[]" class="person_bankname" id="person_bankName"  placeholder="Select Bank">
+            <option value="">--Select Bank--</option>
+            <option value="Access Bank">Access Bank</option>
+            <option value="Diamond Bank">Diamond Bank</option>   
+            <option value="EcoBank">EcoBank</option>   
+            <option value="FirstBank">First Bank</option> 
+            <option value="FCMB Bank">FCMB Bank</option>  
+            <option value="Fidelity Bank">Fidelity Bank</option> 
+            <option value="GTBank">GTBank</option>  
+            <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option> 
+            <option value="Sterling Bank">Sterling Bank</option> 
+            <option value="Unity Bank">Unity Bank</option> 
+            <option value="Union Bank">Union Bank</option>  
+            <option value="UBA Bank">UBA Bank</option> 
+            <option value="Wema Bank">Wema Bank</option> 
+            <option value="Zenith Bank">Zenith Bank</option>
+        </select>
+      </div>
+      <div class="input-group accountNumber">
+        <label for="accountnumber">Account Number *</label>
+        <input type="number" name="person_accountNumber[]" class="person_accountNumber" id="person_accountNumber"  placeholder="Account Number"/>
+      </div>
+      <div class="input-group accountBranch">
+        <label for="branch">Branch</label>
+        <input type="text" name="person_accountBranch[]" class="person_accountBranch" id="person_accountBranch" />
+      </div>
+      </div>
+      </div>
+      
+      <br /><div  class="button_ button_5" id="addBankbtn"><i class="fa fa-plus-circle"></i> Add more banks </div><br /> </tr>
+      <br />
+    </div>
+
+      <div class="btns-group">
+        <button type="button" class="btn btn-prev">Back</button>
+        <button  type="button"  class="navigator btn-next btn-display3">Next</button>
+      </div>
+    </div>
+  <br>
+
+      <!-- FIFTH STEP // / -->
+      <div class="form-step">
+
+           <div class="container-v">
+          <div class="container-v">
+            <div class="wrapper">
+              <label for="seen">would you like Meristem Trustees Limited lodge this will for you? </label>
+              <div class="checkbox">
+                <input class="radio" id="show" type="radio" name="yes" value="yes"> 
+                <label class="radio" for="">Yes</label>
+                <input class="radio" id="hide" type="radio" name="yes" value="No" checked>
+                <label class="radio" for="">No</label>
+
+              </div>
+            </div>
+          
+        
+          <div class="verify">
+            
+            <input class="checkbox " type="checkbox" placeholder="fill me">
+              
+              <h6 class="light-text">By checking this box, I confirm that I am at least 18 years of age and I have read and agreed to Meristem's Terms of Service & Privacy Notice </h6>
+
+          </div>
+        
+        <div class="payment">
+          <table>
+            <tr>
+              <td class="table-design">Meristem Service Fee</td>
+              <td>₦15,000</td>
+            </tr>
+            <tr id="hidden-row" >
+              <td class="table-design">Will Lodging Fee</td>
+              <td>₦20,000</td>
+            </tr>
+            <tr>
+            <td class="table-design"><hr><strong> Total</strong></td>
+              <td ><hr><strong id="table-design">₦15,000</strong></td>
+            </tr>
+          </table>
+           
+          <button  type="button" class="pay_button" >Pay Now</button>
+        </div>
+        
+      
+        <div class="btns-group" id="pay">
+          <button type="button" class="btn-back btn-prev">Back</button>
+          <!-- <input type="submit" value="Submit" class="btn_submit" > -->
+        </div>
+      
+    </div>
+      
+    
+  </form>
+</div>
+
+
+<script src="scripts.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
